@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.webp">
+    <title>Special Design</title>
+    <!-- Css External Files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+        <i class="fa-solid fa-gear" id="gear-icon"></i>
+        <div class="box-content">
+            <div class="colors-box">
+                <h4>colors</h4>
+                <ul id="colors">
+                    <li data-color="#ff9800" style="background-color: #ff9800;" class="checked"></li>
+                    <li data-color="#e91e63" style="background-color: #e91e63;"></li>
+                    <li data-color="#2196f3" style="background-color: #2196f3;"></li>
+                    <li data-color="#4caf50" style="background-color: #4caf50;"></li>
+                    <li data-color="#009688" style="background-color: #009688;"></li>
+                </ul>
+            </div>
+            <div class="backgrounds-box">
+                <h4>background</h4>
+                <div class="btns">
+                    <span id="play-btn" class="active">Play</span>
+                    <span id="pause-btn" >Pause</span>
+                </div>
+            </div>
+            <div class="bullets-box">
+                <h4>bullets</h4>
+                <div class="show-hide">
+                    <span id="show-btn" class="active">Show</span>
+                    <span id="hide-btn">Hide</span>
+                </div>
+            </div>
+            <button id="reset-btn">Reset Options</button>
+        </div>
+    </div>
+    <!-- End Settings Box -->
+    <!-- Start Nav-Bullets -->
+    <div class="nav-bullets">
+        <div class="bullet active" data-section="Landing"></div>
+        <div class="bullet" data-section="About"></div>
+        <div class="bullet" data-section="Skills"></div>
+        <div class="bullet" data-section="Gallery"></div>
+        <div class="bullet" data-section="Timeline"></div>
+        <div class="bullet" data-section="Features"></div>
+        <div class="bullet" data-section="Testimonials"></div>
+        <div class="bullet" data-section="Contact"></div>
+    </div>
+    <!-- End Nav-Bullets -->
+    <!-- Start Landing -->
+    <div class="landing section" id="landing">
+        <i class="fa-solid fa-angles-left" id="arrow-left"></i>
+        <i class="fa-solid fa-angles-right" id="arrow-right"></i>
+        <div class="overlay"></div>
+        <header>
+            <div class="logo">Special</div>
+            <div class="bars-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="links">
+                <li><a href="#landing" class="home-icon active">home</a></li>
+                <li><a href="#about" class="about-icon">about</a></li>
+                <li><a href="#skills" class="skills-icon">skills</a></li>
+                <li><a href="#gallery" class="gallery-icon">gallery</a></li>
+                <li><a href="#timeline" class="timeline-icon">timeline</a></li>
+                <li><a href="#features" class="features-icon">features</a></li>
+                <li><a href="#testimonials" class="testimonials-icon">testimonials</a></li>
+                <li><a href="#contact" class="contact-icon">Contact</a></li>
+            </ul>
+        </header>
+        <div class="intro-text">
+            <h1>Welcome to <span>Special</span> Design</h1>
+            <p>
+                Discover a world of possibilities with our special services.
+                Our platform provides you with the tools, resources, 
+                and support you need to reach new heights.
+            </p>
+        </div>
+        <div class="bullets">
+            <span onclick="arrowLeft.click();"></span>
+            <span></span>
+            <span onclick="arrowRight.click();"></span>
+        </div>
+    </div>
+    <!-- End Landing -->
+    <!-- Start About -->
+    <div class="about section" id="about">
+        <h2 class="section-heading">About Us</h2>
+        <div class="content">
+            <p class="info">
+                <span class="first-word">We</span> are a dedicated team committed to providing 
+                top-notch services and solutions to meet your needs.
+                <span class="space"></span>
+                <span class="first-word">Our</span> mission is to deliver excellence and innovation 
+                in every project we undertake.
+                <span class="space"></span>
+                <span class="first-word">With</span> a focus on quality and customer satisfaction, 
+                we strive to make a positive impact in the industry.
+            </p>
+            <div class="image">
+                <img src="images/about.jpg" alt="about-img">
+            </div>
+        </div>
+    </div>  
+    <!-- End About -->
+    <!-- Start Our-Skills -->
+    <div class="our-skills section" id="skills">
+        <h2 class="section-heading">Our Skills</h2>
+        <div class="content">
+           <div class="skill-box">
+                <h4>HTML</h4>
+                <div class="prog">
+                    <span data-width = '77%' style="width: 77%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <h4>CSS</h4>
+                <div class="prog">
+                    <span  data-width = '85%' style="width: 85%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <h4>Java Script</h4>
+                <div class="prog">
+                    <span  data-width = '95%' style="width: 95%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <h4>React JS</h4>
+                <div class="prog">
+                    <span  data-width = '70%' style="width: 70%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <h4>Python</h4>
+                <div class="prog">
+                    <span  data-width = '60%' style="width: 60%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our-Skills -->
+    <!-- Start Our-gallery -->
+    <div class="our-gallery  section" id="gallery">
+        <h2 class="section-heading">Our Gallery</h2>
+        <div class="images">
+            <img src="images/gallery-1.jpg" alt="gallery-img" data-title="Awesome Image One">
+            <img src="images/gallery-2.jpg" alt="gallery-img" data-title="Awesome Image Two">
+            <img src="images/gallery-3.jpg" alt="gallery-img" data-title="Awesome Image Three">
+            <img src="images/gallery-4.jpg" alt="gallery-img" data-title="Awesome Image Four">
+            <img src="images/gallery-5.jpg" alt="gallery-img" data-title="Awesome Image Five">
+            <img src="images/gallery-6.jpg" alt="gallery-img" data-title="Awesome Image Six">
+            <img src="images/gallery-7.jpg" alt="gallery-img" data-title="Awesome Image Seven">
+            <img src="images/gallery-8.jpg" alt="gallery-img" data-title="Awesome Image Eight">
+            <img src="images/gallery-9.jpg" alt="gallery-img" data-title="Awesome Image Nine">
+            <img src="images/gallery-10.jpg" alt="gallery-img" data-title="Awesome Image Ten">
+            <img src="images/gallery-11.jpg" alt="gallery-img" data-title="Awesome Image Eleven">
+            <img src="images/gallery-12.jpg" alt="gallery-img" data-title="Awesome Image Twelve">
+        </div>
+    </div>
+    <!-- End Our-gallery -->
+    <!-- Start Timeline -->
+    <div class="timeline  section" id="timeline">
+        <h2 class="section-heading">Timeline</h2>
+        <div class="content">
+            <div class="main-line"></div>
+            <div class="item right-1">
+                <div class="heading">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>gather data</h4>
+                </div>
+                <ul class="details">
+                    <li>Identify target audience for site</li>
+                    <li>Determine suitable content type</li>
+                    <li>Add text here</li>
+                </ul>
+            </div>
+            <div class="item left-1">
+                <div class="heading">
+                    <i class="fa-solid fa-swatchbook"></i>
+                    <h4>planning</h4>
+                </div>
+                <ul class="details">
+                    <li>Develop site map for navigation</li>
+                    <li>Deside technologies to operate website</li>
+                    <li>Add text here</li>
+                </ul>
+            </div>
+            <div class="item right-2">
+                <div class="heading">
+                    <i class="fa-regular fa-object-ungroup"></i>
+                    <h4>Web Designing</h4>
+                </div>
+                <ul class="details">
+                    <li>Deside colors and layouts</li>
+                    <li>Develop final design and get approval</li>
+                    <li>Add text here</li>
+                </ul>
+            </div>
+            <div class="item left-2">
+                <div class="heading">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Web Development</h4>
+                </div>
+                <ul class="details">
+                    <li>Create functional site</li>
+                    <li>Use various tools</li>
+                    <li>Add text here</li>
+                </ul>
+            </div>
+            <div class="item right-3">
+                <div class="heading">
+                    <i class="fa-solid fa-code-merge"></i>
+                    <h4>Testing</h4>
+                </div>
+                <ul class="details">
+                    <li>Conduct quality assurance testing</li>
+                    <li>Use libraries, JS code for final effects</li>
+                    <li>Add text here</li>
+                </ul>
+            </div>
+            <div class="item left-3">
+                <div class="heading">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h4>Maintenance</h4>
+                </div>
+                <ul class="details">
+                    <li>Revise and update site content</li>
+                    <li>Update site as per latest technology</li>
+                    <li>Add text here</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Timeline -->
+    <!-- Start Features -->
+    <div class="features  section" id="features">
+        <h2 class="section-heading">Our Features</h2>
+        <div class="content">
+            <div class="box">
+                <img src="images/features-1.webp" alt="features-img">
+                <h4>Fast Performance</h4>
+                <p>Our system is optimized to deliver fast performance.</p>
+            </div>
+            <div class="box">
+                <img src="images/features-2.webp" alt="features-img">
+                <h4>Responsive Design</h4>
+                <p>Enjoy an intuitive interface on mobile, tablet, or desktop.</p>
+            </div>
+            <div class="box">
+                <img src="images/features-3.jpeg" alt="features-img">
+                <h4>Secure Platform</h4>
+                <p>We prioritize security to keep your data safe and private.</p>
+            </div>
+            <div class="box">
+                <img src="images/features-4.jpeg" alt="features-img">
+                <h4>Customizable Options</h4>
+                <p>Our platform offers flexible and customizable settings.</p>
+            </div>
+            <div class="box">
+                <img src="images/features-5.jpeg" alt="features-img">
+                <h4>24/7 Support</h4>
+                <p>Our dedicated support team is available around the clock.</p>
+            </div>
+            <div class="box">
+                <img src="images/features-6.webp" alt="features-img">
+                <h4>Regular Updates</h4>
+                <p>Stay up-to-date with the latest features.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Testimonials -->
+    <div class="testimonials  section" id="testimonials">
+        <h2 class="section-heading">Testimonials</h2>
+        <div class="content">
+            <div class="box">
+                <p class="text">
+                    This product has exceeded my expectations. The quality is outstanding, and the customer service is second to none. I would highly recommend it to anyone!
+                </p>
+                <div class="client">
+                    <img src="images/client.png" alt="client-img">
+                    <div class="auther">
+                        <h4>John Doe</h4>
+                        <h5>CEO, ABC Company</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p class="text">
+                    I have been using this service for months, and I can honestly say it has transformed the way I do business. The efficiency and ease of use are simply unparalleled.
+                </p>
+                <div class="client">
+                    <img src="images/client.png" alt="client-img">
+                    <div class="auther">
+                        <h4>John Doe</h4>
+                        <h5>Business Owner</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p class="text">
+                    A five-star experience from start to finish. The team was professional, attentive, and delivered exactly what they promised. I couldn't be happier!
+                </p>
+                <div class="client">
+                    <img src="images/client.png" alt="client-img">
+                    <div class="auther">
+                        <h4>John Doe</h4>
+                        <h5>Happy Client</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start Contact-Us -->
+    <div class="contact-us  section" id="contact">
+        <div class="overlay"></div>
+        <h2 class="section-heading">Contact Us</h2>
+        <form class="content">
+            <div class="left">
+                <input type="text" name="username" placeholder="Your Name">
+                <input type="text" name="phone" placeholder="Your Phone">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <div class="right">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div> 
+    <!-- End Contact-Us -->
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="info">
+            <h4>Keep in Touch</h4>
+            <p><span>Address:</span> 123 Main St, Anytown, Egypt</p>
+            <p><span>Phone:</span> 555-555-5555</p>
+            <p>
+                <span>Email:</span> <a href="mailto:info@example.com">info@example.com</a>
+            </p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="end">&copy; <span class="year"></span> <span class="site-name">Special</span>. All Rights Reserved.</p>
+    </footer>
+    <!-- End Footer -->
+    <script src="js/master.js"></script>
+</body>
+
+</html>
